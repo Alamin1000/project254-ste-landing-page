@@ -6,17 +6,202 @@
 
 
 @media (max-width: 1199px) {
- 
+    .hero__content p {
+        font-size: 16px;
+    }
+    .hero__content .h1 {
+        margin: 0 0 12px;
+        font-size: 75px;
+    }
+    .default-button {
+        font-size: 12px;
+        padding: 14px 30px 14px;
+    }
+    .hero__content .bottom-button {
+        margin: 25px 0 0;
+    }
+    .hero-section__inner {
+        padding: 120px 0;
+    }
+
+
+    body {
+        font-size: 17px;
+    }
+    .h2 {
+        font-size: 35.5px;
+        margin: 0 0 20px;
+    }
+    .cont_blk .bottom-button {
+        margin: 18px 0 0;
+    }
+    .section-a__content {
+        max-width: 520px;
+    }
+    .section-a {
+        padding: calc(var(--margin-top) + 70px) 0 0;
+    }
+
+
+    .section-b__inner {
+        padding: 60px 0 0;
+    }
+    .clean-section {
+        padding: 30px 0 calc(var(--vw) * 0.283);
+    }
+
+
+    .clean__content-box__title h2 {
+        font-size: 37px;
+    }
+    .clean__content-box__title {
+        margin: 0 0 35px;
+    }
+    .clean__elm-icon {
+        margin: 0 6px;
+        width: 40px;
+        height: 40px;
+    }
+    .clean-box__table .tr .column {
+        margin: 0 0 11px;
+    }
+    .clean-box__table .tr .column--2 h3 {
+        font-size: 19px;
+    }
+    .clean-box__table {
+        width: 450px;
+    }
+    .clean-box__table__after-row {
+        margin: 25px 0 0;
+    }
+    .clean__content-box {
+        padding: 40px 25px;
+        border-radius: 12px;
+    }
+    .clean__content-box .fish1 {
+        width: 100px;
+        top: 35px;
+        left: -52px;
+    }
+    .clean__content-box .fish2 {
+        top: 100px;
+        right: 40px;
+        width: 60px;
+    }.clean__content-box .fish2 {
+        top: 100px;
+        right: 40px;
+        width: 60px;
+    }
+
+
+    .footer__menu-column h4 {
+        font-size: 20px;
+        margin: 0 0 22px;
+    }
+    .footer-section {
+        padding: 60px 0 60px;
+    }
 }
 
 
 @media (max-width: 991px) {
- 
+    .footer-section__inner {
+        flex-wrap: wrap;
+    }
+    .footer__left {
+        margin: 0 0 30px;
+        width: 100%;
+    }
+    .footer__right {
+        width: 100%;
+    }
+
+    .hero__content {
+        /* filter: drop-shadow(0 0 15px #1B328B); */
+    }
+    .hero__content p {
+        font-size: 18px;
+        opacity: 1;
+        /* color: var(--theme__color2); */
+    }
 }
 
 
 @media (max-width: 768px) {
- 
+    .hero__content {
+        padding: 35px 12px;
+        border-radius: 10px;
+        /* backdrop-filter: blur(1px); */
+        background: #2f1d6ea4;
+    }
+    .hero__content .h1 {
+        margin: 0 0 12px;
+        font-size: 41px;
+    }
+    .hero__content p {
+        font-size: 16px;
+    }
+    .header-section {
+        padding: 15px 0;
+    }
+    .hero-section__inner {
+        padding: 88px 0;
+    }
+    .hero__content .bottom-button {
+        margin: 10px 0 0;
+    }
+    .h2 {
+        font-size: 25px;
+        margin: 0 0 13px;
+    }
+    .cont_blk .bottom-button {
+        margin: 8px 0 0;
+    }
+    body {
+        font-size: 15px;
+    }
+    .cont_blk-in-text {
+        padding-right: 0;
+    }
+    .section-a {
+        --margin-top: calc(var(--vw) * 0.824 * 0.2);
+        padding: calc(var(--margin-top) + 45px) 0 50px;
+    }
+    .section-b__inner {
+        padding: 30px 0 0;
+    }
+    .clean__content-box__title h2 {
+        font-size: 22px;
+    }
+    .clean__content-box {
+        padding: 30px 20px;
+        border-radius: 9px;
+    }
+    .clean-box__table .tr {
+        flex-wrap: wrap;
+    }
+    .clean-box__table .tr .column {
+        width: 100%;
+    }
+    .clean-box__table .tr .column--2 {
+        text-align: center;
+    }
+    .clean__content-box .fish2 {
+        top: 95px;
+        right: 10px;
+        width: 60px;
+    }
+    .clean-box__table__after-row {
+        margin: 15px 0 0;
+    }
+
+    .footer__right {
+        flex-wrap: wrap;
+    }
+    .footer__menu-column {
+        width: 100%;
+        margin: 0 0 30px;
+    }
 }
 
 
@@ -25,6 +210,12 @@
 }
 
 
-@media (max-width: 390px) {
- 
-}
+@media (max-width: 370px) {
+    .hero__content .h1 {
+        margin: 0 0 10px;
+        font-size: 35px;
+    }
+    .hero__content p {
+        font-size: 15px;
+    }
+}   

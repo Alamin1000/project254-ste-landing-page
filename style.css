@@ -15,7 +15,7 @@
 }
 body {
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 1.6;
   background-color: var(--theme__color1);
   color: #fff;
   overflow-x: hidden;
@@ -79,6 +79,7 @@ ul{
 p{
   font-family: var(--lora);
   margin-bottom: 15px;
+  opacity: 0.7;
 }
 p:last-child{
   margin: 0;
@@ -97,9 +98,27 @@ p:last-child{
 /* ---common-content--- */
 .h2 {
   font-size: 48px;
+  margin: 0 0 27px;
   font-weight: 600;
 }
-
+.cont_blk {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cont_blk.cont_blk--center {
+  align-items: center;
+  text-align: center;
+}
+.cont_blk-in-text {
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cont_blk .bottom-button {
+  margin: 27px 0 0;
+}
 /* ---common-content---end */
 
 
@@ -117,8 +136,10 @@ p:last-child{
 .header__in {
 
 }
-.header-section .container {
-  max-width: 974px;
+@media (min-width:1200px) {
+  .header-section .container {
+    max-width: 974px;
+  }
 }
 .header-section__inner {
   display: flex;
@@ -148,9 +169,10 @@ p:last-child{
 .main-menu > ul > li > a {
   font-size: 11px;
   font-weight: 500;
+  transition: 0.3s;
 }
 .main-menu > ul > li > a:hover {
-
+  color: var(--theme__color2);
 }
 /* header-end */
 
@@ -170,8 +192,10 @@ p:last-child{
   color: var(--theme__color1);
   position: absolute;
   transition: 0.3s;
-  right: 25px;
-  top: 25px;
+  right: 15px;
+  top: 15px;
+  font-size: 22px;
+  line-height: 1;
 }
 .offcanvas-close:hover {
   color: #97A3AE;
@@ -194,7 +218,7 @@ p:last-child{
   min-width: 200px;
   z-index: 5;
   position: relative;
-  background: #d5dce2;
+  background: #fff;
   height: 100%;
   padding: 50px 20px 40px;
   overflow: auto;
@@ -204,12 +228,13 @@ p:last-child{
 .offcanvas-menu .offmenu :-webkit-scrollbar {
   display: none;
 }
-.offcanvas-menu ul li a {
+.mobile-menu li a {
   display: block;
   text-align: center;
   font-size: 16px;
   color: var(--theme__color1);
   padding: 10px;
+  font-weight: 600;
 }
 .dropdown-menu-custom ul {
   background: #fff;
@@ -284,12 +309,14 @@ p:last-child{
 
 /* ---hero-section--- */
 .hero-section {
-  padding: 140px 0;
   background: url('images/hero-image.png') no-repeat center top/100% 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-section__inner {
-	min-height: 54.6vw;
+	padding: 140px 0;
+	min-height: calc(var(--vw) * 0.824);
 }
 
 .hero__content {
@@ -298,7 +325,7 @@ p:last-child{
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	min-height: 19vw;
+	min-height: 20vw;
 }
 .hero__content .h1 {
   margin: 0 0 18px;
@@ -311,3 +338,214 @@ p:last-child{
   margin: 35px 0 0;
 }
 /* ---hero-section---end */
+
+
+
+/* ---section-a--- */
+.section-a {
+  --margin-top: calc(var(--vw) * 0.824 * 0.08);
+	margin: calc(var(--margin-top) * -1) 0 0;
+  padding: calc(var(--margin-top) + 142px) 0 0;
+	background: url('images/section-a.png') repeat center top/100% 100%;
+}
+.section-a__inner {
+	min-height: calc(var(--vw) * 0.819);
+}
+
+.section-a__content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* ---section-a---end */
+
+
+/* ---section-b--- */
+.section-b {
+  background: url('images/section-b.png') no-repeat center bottom/100% auto;
+}
+.section-b__inner {
+  padding: 135px 0 0;
+	display: flex;
+	min-height: calc(var(--vw) * 0.85);
+}
+
+.section-b__content {
+  max-width: 700px;
+  margin: 0 0 0 auto;
+}
+/* ---section-b---end */
+
+
+
+/* ---clean-section--- */
+.clean-section {
+	padding: 48px 0 calc(var(--vw) * 0.283);
+	background: linear-gradient(to top, #c141e13f, #001439);
+	position: relative;
+	z-index: 1;
+}
+.clean__bg-ov-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.clean-section__inner {
+	/* min-height: calc(var(--vw) * 0.66); */
+}
+
+.clean__content-box {
+  padding: 55px 40px;
+  background: linear-gradient(166.87deg, #FFFFFF -0.61%, #C9C4E3 119.71%);
+  border-radius: 20px;
+  color: #001439;
+  position: relative;
+  z-index: 1;
+}
+.clean__content-box .fish1 {
+	width: 164px;
+	top: 65px;
+	left: -85px;
+	position: absolute;
+}
+.clean__content-box .fish2 {
+	position: absolute;
+	top: 150px;
+	right: 70px;
+	width: 112px;
+}
+.clean__content-box__title {
+  margin: 0 0 50px;
+  text-align: center;
+}
+.clean__content-box__title h2 {
+  font-size: 50px;
+}
+.clean__content-box__title h5 {
+
+}
+.clean__content-box__main {
+
+}
+.clean-box__table {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.clean-box__table .tr {
+  display: flex;
+}
+.clean-box__table .tr .column {
+  margin: 0 0 15px;
+}
+.clean-box__table .tr .column--1 {
+  flex-grow: 1;
+}
+.clean-box__table .tr .column--2 {
+  width: 110px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.clean-box__table .tr .column--2 h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.clean__elm-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clean__elm-icon {
+  margin: 0 9px;
+  width: 60px;
+  height: 60px;
+}
+.clean__elm-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.clean-box__table__after-row {
+  margin: 42px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.clean-box__table__after-row .button {
+
+}
+/* ---clean-section---end */
+
+
+
+/* ---footer-section--- */
+.footer-section {
+  padding: 115px 0 175px;
+  background: #021E50;
+}
+.footer-section__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left {
+
+}
+.footer__logo {
+  margin: 0 0 33px;
+  display: inline-flex;
+}
+.footer__left p {
+  font-size: 14px;
+  font-family: var(--inter);
+}
+.fs-menu {
+  margin: 25px 0 0;
+  display: flex;
+}
+.fs-menu li {
+  margin-right: 25px;
+}
+.fs-menu li:last-child {
+  margin-right: 0;
+}
+.fs-menu li a {
+  font-size: 24px;
+}
+.fs-menu li a:hover {
+
+}
+
+.footer__right {
+  width: 50%;
+  font-family: var(--rubik);
+  display: flex;
+}
+.footer__menu-column {
+  width: 33.33%;
+}
+.footer__menu-column h4 {
+  font-size: 25px;
+  margin: 0 0 28px;
+  font-weight: 400;
+}
+.footer__menu {
+
+}
+.footer__menu li {
+  margin: 0 0 8px;
+}
+.footer__menu li:last-child {
+  margin-bottom: 0;
+}
+.footer__menu li a {
+  font-size: 15px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.footer__menu li a:hover {
+  opacity: 1;
+}
+/* ---footer-section---end */

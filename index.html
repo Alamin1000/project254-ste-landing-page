@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Hello World!</title>
+	<title>Safe The Earth</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Site description will be here">
+	<link rel="icon" href="images/fav-icon.png">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
@@ -26,21 +27,15 @@
 		<!-- offcanvas-start -->
 		<div class="offcanvas-menu">
 			<ul class="offmenu" id="menuParent">
-				<a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-				<li class="active"><a href="#">HOME</a></li>
-				<li><a href="#">ABOUT US</a></li>
-				<li class="dropdown">
-					<a href="#" data-bs-toggle="collapse" data-bs-target='#drop-menu1'>OUR HORSES</a>
-					<div class="dropdown-menu-custom collapse" id="drop-menu1" data-bs-parent="#menuParent">
-						<ul>
-							<li><a href="#">YEARLINGS</a></li>
-							<li><a href="#">2 YEAR OLDS</a></li>
-							<li><a href="#">3 YEAR OLD PLUS</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">LATEST NEWS</a></li>
-				<li><a href="#">CONTACT & FIND US</a></li>
+				<a href="#" class="offcanvas-close"><i class="far fa-times"></i></a>
+				<ul class="mobile-menu">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PORTFOLIO</a></li>
+					<li><a href="#">PRODUCTS</a></li>
+					<li><a href="#">TEAM</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
 			</ul>
 		</div>
 		<div class="offcanvas-overlay"></div>
@@ -55,7 +50,7 @@
 							<img src="images/logo.svg" alt="">
 						</a>
 
-						<div class="main-menu">
+						<div class="main-menu d-lg-block d-none">
 							<ul>
 								<li><a href="#">HOME</a></li>
 								<li><a href="#">PORTFOLIO</a></li>
@@ -65,6 +60,10 @@
 								<li><a href="#">CONTACT</a></li>
 							</ul>
 						</div>
+
+						<a href="#" class="offcanvas-open">
+							<i class="far fa-bars"></i>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -78,7 +77,9 @@
 					<div class="hero-section__inner">
 						<div class="hero__content">
 							<h1 class="h1">Safe The Earth</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do imos.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur
+								<br class="d-lg-none">
+								adipiscing elit sed do imos.</p>
 							<a href="#" class="bottom-button default-button">KNOW MORE</a>
 						</div>
 					</div>
@@ -93,8 +94,10 @@
 					<div class="section-a__inner">
 						<div class="cont_blk section-a__content">
 							<h2 class="h2">Lorem Impum Dolor Amet</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua taun enim.</p>
-							<a href="#" class="bottom-button default-button">KNOW MORE</a>
+							<div class="cont_blk-in-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua taun enim.</p>
+								<a href="#" class="bottom-button default-button">KNOW MORE</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -108,8 +111,10 @@
 					<div class="section-b__inner">
 						<div class="cont_blk section-b__content">
 							<h2 class="h2">Lorem Impum Dolor Amet</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua taun enim.</p>
-							<a href="#" class="bottom-button default-button">KNOW MORE</a>
+							<div class="cont_blk-in-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua taun enim.</p>
+								<a href="#" class="bottom-button default-button">KNOW MORE</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -119,13 +124,16 @@
 
 			<!-- clean-section -->
 			<section class="clean-section">
+				<img src="images/clean-section.png" alt="" class="clean__bg-ov-image">
 				<div class="container">
 					<div class="clean-section__inner">
 
 						<div class="clean__content-box">
+							<img class="fish fish1" src="images/fish1.png" alt="">
+							<img class="fish fish2" src="images/fish2.png" alt="">
 							<div class="clean__content-box__title">
 								<h2>230GB of Space = 2kg Co2</h2>
-								<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
 							</div>
 							<div class="clean__content-box__main">
 								<div class="clean-box__table">
@@ -186,7 +194,7 @@
 											</div>
 										</div>
 										<div class="column column--2">
-											<h3 class="mb-0">532x</h3>
+											<h3 class="mb-0">2x</h3>
 										</div>
 									</div>
 								</div>
@@ -211,7 +219,7 @@
 						<a href="index.html" class="footer__logo">
 							<img src="images/logo.svg" alt="">
 						</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
 						<p>© lorem ipsum dolor sit amet</p>
 						<ul class="fs-menu">
 							<li><a href="#"><i class="fab fa-facebook"></i></a></li>

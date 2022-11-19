@@ -6,10 +6,16 @@
     border-radius: 50px;
     font-weight: 700;
     background: var(--theme__color2);
+    color: #fff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: 0.3s;
+}
+.default-button:hover {
+    background: #cc2766;
+    color: #fff;   
 }
 /*-buttons-end */
 

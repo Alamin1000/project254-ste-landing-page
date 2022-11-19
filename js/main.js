@@ -25,62 +25,6 @@
   });
 
 
-  $('input[type="checkbox"]').closest('label').css('cursor','pointer');
-  $('input[type="radio"]').closest('label').css('cursor','pointer');
-  
-
-        // owl-carousel
-        $('.brand-active').owlCarousel({
-          loop:true,
-          margin:50,
-          responsiveClass:true,
-          nav:false,
-          navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
-          responsive:{
-              0:{
-                  items:1,
-                  nav:false
-              },
-              600:{
-                  items:3,
-                  nav:false
-              },
-              1000:{
-                  items:4,
-                  nav:false,
-                  loop:false
-              }
-          }
-        });
-
-        //magnificPopup
-        $('.popup-img').magnificPopup({
-          type: 'image'
-        });
-        $('.popup-video').magnificPopup({
-        type: 'iframe'
-        });
-        // magnific-popup-img-gallery
-        $('.album-img a').magnificPopup({
-          type: 'image',
-          gallery: {
-            enabled: true,
-          }
-        });
-        //multiple-img-gallery
-        $('.image-box').each(function() { // the containers for all your galleries
-          $(this).magnificPopup({
-              delegate: '.img', // the selector for gallery item
-              type: 'image',
-              gallery: {
-                enabled:true
-              }
-          });
-        });
-
-
-        
-
 })(jQuery);
 
 
@@ -93,9 +37,6 @@ $(document).ready(function(){
     $.scrollUp();
   });
 
-
-  // nice-select
-  $('.nice-select').niceSelect();
 
   // preloader
   $("#preloader").fadeOut(500);

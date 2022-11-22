@@ -1,3 +1,13 @@
+// device-size
+$(window).on('load resize', function(){
+  // device-size
+  $('body').append("<div class='device-size-detector' style='height: 100%; width: 100%; position: fixed; top: 0; left: 0; opacity: 0; visibility: hidden; pointer-events: none;'></div>");
+  $('body').css({
+    '--vh': $('.device-size-detector').outerHeight() + 'px',
+    '--vw': $('.device-size-detector').outerWidth() + 'px'
+  })
+})
+
 (function ($) {
   "use strict";
 
@@ -43,17 +53,6 @@ $(document).ready(function(){
 
 })
 
-
-
-  // device-size
-  $(window).on('load resize', function(){
-    // device-size
-    $('body').append("<div class='device-size-detector' style='height: 100%; width: 100%; position: fixed; top: 0; left: 0; opacity: 0; visibility: hidden; pointer-events: none;'></div>");
-    $('body').css({
-      '--vh': $('.device-size-detector').outerHeight() + 'px',
-      '--vw': $('.device-size-detector').outerWidth() + 'px'
-    })
-  })
 
 
 
